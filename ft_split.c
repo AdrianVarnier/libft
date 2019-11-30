@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 14:56:13 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/30 17:33:32 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/11/30 17:53:11 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static size_t	ft_words(const char *s, char c)
 		if (s[x] != c)
 		{
 			counter++;
-			while (s[x] != c || s[x] != '\0')
+			while (s[x] != c)
 				x++;
 		}
 		else
