@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 16:38:25 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/15 16:47:22 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 17:43:08 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	if (s != 0)
+		write(fd, s, ft_strlen(s));
 }

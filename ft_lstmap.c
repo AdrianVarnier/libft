@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:48:40 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/30 12:50:28 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 17:41:50 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ t_list	*ft_lstmap(t_list *l, void *(*f)(void *), void (*del)(void *))
 	t_list	*cpy;
 	t_list	*first;
 
+	if (!l)
+		return (0);
 	cpy = ft_lstnew(f(l->content));
 	first = cpy;
 	l = l->next;

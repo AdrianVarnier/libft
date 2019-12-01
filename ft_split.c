@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 15:23:14 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/01 17:28:02 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 17:45:45 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ char		**ft_split(const char *s, char c)
 	int		words;
 	char	**tab;
 
+	if (!s)
+		return (0);
 	i = 0;
 	words = ft_count_words(s, c);
 	if (!(tab = (char **)malloc(sizeof(char *) * (words + 1))))
@@ -86,10 +88,7 @@ char		**ft_split(const char *s, char c)
 		if (!(tab[i] = ft_substr(s, ft_getword(s, c, i), ft_wordlen(s, c, i))))
 		{
 			while (i > 0)
-			{
-				free(tab[i]);
-				i--;
-			}
+				free(tab[i--]);
 			free(tab);
 			return (0);
 		}
