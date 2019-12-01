@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 16:54:55 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/22 16:35:45 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 10:40:59 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int x;
+	size_t x;
 
 	if (dst == 0 && src == 0)
 		return (dst);

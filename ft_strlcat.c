@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 13:44:27 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/15 15:26:45 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 10:41:40 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t len)
 {
-	int	x;
+	size_t	x;
 
 	x = ft_strlen(dst);
 	if (x > len)

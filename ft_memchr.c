@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 17:30:32 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/14 11:53:25 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 10:40:08 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t len)
 {
-	int	x;
+	size_t	x;
 
 	x = 0;
 	while (x < len)

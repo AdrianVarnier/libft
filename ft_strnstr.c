@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 15:31:15 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/14 12:19:15 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 10:44:58 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int x;
-	int y;
+	size_t x;
+	size_t y;
 
 	x = 0;
 	y = 0;
