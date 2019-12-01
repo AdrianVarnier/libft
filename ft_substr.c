@@ -19,7 +19,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 	x = 0;
 	if (ft_strlen(s) < start)
-		return (ft_calloc(1, sizeof(char)));
+		return (ft_strdup(""));
 	if (!(cpy = (char *)malloc(sizeof(char) * (len + 1))))
 		return (0);
 	ft_strlcpy(cpy, s + start, len + 1);

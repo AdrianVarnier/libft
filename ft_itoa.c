@@ -29,7 +29,7 @@ static int		ft_numbers(unsigned int n)
 
 char			*ft_itoa(int n)
 {
-	int				x;
+	int				i;
 	unsigned int	nb;
 	char			*s;
 
@@ -40,16 +40,16 @@ char			*ft_itoa(int n)
 	if (!(s = (char *)malloc((sizeof(char) *
 	(ft_numbers(nb) + 1 + (n < 0 ? 1 : 0))))))
 		return (0);
-	x = ft_numbers(nb) - 1 + (n < 0 ? 1 : 0);
-	s[x + 1] = '\0';
+	i = ft_numbers(nb) - 1 + (n < 0 ? 1 : 0);
+	s[i + 1] = '\0';
 	if (n < 0)
 		s[0] = '-';
 	while (nb >= 10)
 	{
-		s[x] = nb % 10 + 48;
+		s[i] = nb % 10 + 48;
 		nb = nb / 10;
-		x--;
+		i--;
 	}
-	s[x] = nb + 48;
+	s[i] = nb + 48;
 	return (s);
 }

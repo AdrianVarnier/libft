@@ -14,42 +14,42 @@
 
 static size_t	ft_start(const char *s1, const char *set)
 {
-	size_t x;
-	size_t y;
+	size_t i;
+	size_t j;
 
-	x = 0;
-	y = 0;
-	while (set[y] != '\0')
+	i = 0;
+	j = 0;
+	while (set[j] != '\0')
 	{
-		if (s1[x] == set[y])
+		if (s1[i] == set[j])
 		{
-			x++;
-			y = 0;
+			i++;
+			j = 0;
 		}
 		else
-			y++;
+			j++;
 	}
-	return (x);
+	return (i);
 }
 
 static size_t	ft_end(const char *s1, const char *set)
 {
-	size_t	x;
-	size_t	y;
+	size_t	i;
+	size_t	j;
 
-	x = ft_strlen(s1) - 1;
-	y = 0;
-	while (set[y] != '\0')
+	i = ft_strlen(s1) - 1;
+	j = 0;
+	while (set[j] != '\0')
 	{
-		if (s1[x] == set[y])
+		if (s1[i] == set[j])
 		{
-			x--;
-			y = 0;
+			i--;
+			j = 0;
 		}
 		else
-			y++;
+			j++;
 	}
-	return (x);
+	return (i);
 }
 
 char			*ft_strtrim(const char *s1, const char *set)
