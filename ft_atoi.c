@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 17:50:05 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/27 17:02:02 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/01 10:21:02 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *s)
 {
-	size_t	x;
-	size_t	y;
-	int		signe;
+	int	x;
+	int	y;
+	int	signe;
 
 	x = 0;
 	y = 0;

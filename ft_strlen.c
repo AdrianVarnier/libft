@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t x;
+	int x;
 
 	x = 0;
 	while (s[x] != '\0')

@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-static size_t	ft_start(const char *s1, const char *set)
+static int	ft_start(const char *s1, const char *set)
 {
-	size_t x;
-	size_t y;
+	int x;
+	int y;
 
 	x = 0;
 	y = 0;
@@ -32,10 +32,10 @@ static size_t	ft_start(const char *s1, const char *set)
 	return (x);
 }
 
-static size_t	ft_end(const char *s1, const char *set)
+static int	ft_end(const char *s1, const char *set)
 {
-	size_t x;
-	size_t y;
+	int x;
+	int y;
 
 	x = ft_strlen(s1) - 1;
 	y = 0;

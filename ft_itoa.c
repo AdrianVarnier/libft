@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static size_t	ft_numbers(unsigned int n)
+static int		ft_numbers(unsigned int n)
 {
-	size_t	counter;
+	int	counter;
 
 	if (n == 0)
 		return (1);
@@ -29,7 +29,7 @@ static size_t	ft_numbers(unsigned int n)
 
 char			*ft_itoa(int n)
 {
-	size_t			x;
+	int				x;
 	unsigned int	nb;
 	char			*s;
 

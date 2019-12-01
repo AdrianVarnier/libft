@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {
-	size_t x;
+	int	x;
 
 	x = 0;
 	while (x < len)

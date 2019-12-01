@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t len)
 {
-	size_t x;
+	int	x;
 
 	if (dst == 0 && src == 0)
 		return (dst);

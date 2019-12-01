@@ -14,7 +14,7 @@
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	x;
+	int		x;
 	char	*cpy;
 
 	x = 0;
