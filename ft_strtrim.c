@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 14:45:28 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/01 17:39:44 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/02 17:28:36 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ static size_t	ft_end(const char *s1, const char *set)
 
 char			*ft_strtrim(const char *s1, const char *set)
 {
-	if (!s1)
+	if (!s1 || !set)
 		return (0);
 	if (ft_start(s1, set) == ft_strlen(s1))
 		return (ft_strdup(""));

@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:47:02 by avarnier          #+#    #+#             */
-/*   Updated: 2019/11/30 17:32:14 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/02 17:42:00 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **l, void (*del)(void *))
 {
 	t_list	*tmp;
 
+	if (!l || !del)
+		return ;
 	while (*l != 0)
 	{
 		tmp = (*l)->next;
