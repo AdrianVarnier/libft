@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 15:13:28 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/01 10:39:44 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/02 17:18:45 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t len)
 {
 	size_t	i;
 
+	if (!dst && !src)
+		return (dst);
 	i = 0;
 	while (i < len)
 	{
