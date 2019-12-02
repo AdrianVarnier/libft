@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 11:19:09 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/01 10:49:52 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/02 18:11:56 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 	size_t i;
 
 	i = 0;
-	if (len == 0)
+	if (!dst)
+		return (0);
+	if (!len)
 		return (ft_strlen(src));
 	while (src[i] != '\0' && i < len - 1)
 	{
