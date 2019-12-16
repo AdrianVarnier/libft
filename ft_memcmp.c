@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 12:51:55 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/02 18:19:44 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/16 13:30:58 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {
 	size_t	i;
 
-	if (!len)
-		return (0);
 	i = 0;
 	while (i < len)
 	{
