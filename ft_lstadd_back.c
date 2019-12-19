@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:45:30 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/19 15:33:01 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/19 15:48:28 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ void	ft_lstadd_back(t_list **first, t_list *new)
 
 	if (!first || !new)
 		return ;
-	l = *first;
 	if (!(*first))
-		l = new;
+		*first = new;
 	else
 	{
+		l = *first;
 		l = ft_lstlast(l);
-		(l)->next = new;
+		l->next = new;
 	}
 	new->next = 0;
 }

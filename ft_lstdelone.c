@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:46:26 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/02 17:40:18 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/19 15:45:35 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_lstdelone(t_list *l, void (*del)(void *))
 {
 	if (!l || !del)
 		return ;
-	(*del)(l->content);
+	del(l->content);
 	free(l);
 }

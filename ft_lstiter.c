@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:48:04 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/02 17:48:15 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/19 15:52:37 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstiter(t_list *l, void (*f)(void *))
 		return ;
 	while (l != 0)
 	{
-		(*f)(l->content);
+		f(l->content);
 		l = l->next;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 14:47:02 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/19 15:34:04 by avarnier         ###   ########.fr       */
+/*   Updated: 2019/12/19 15:52:24 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@ void	ft_lstclear(t_list **first, void (*del)(void *))
 	l = *first;
 	while (l != 0)
 	{
-		tmp = (l)->next;
-		ft_lstdelone(l, (*del));
-		free(l);
+		tmp = l->next;
+		ft_lstdelone(l, del);
 		l = tmp;
 	}
 	*first = 0;
