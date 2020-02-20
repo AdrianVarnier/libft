@@ -6,7 +6,7 @@
 #    By: avarnier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/30 12:55:17 by avarnier          #+#    #+#              #
-#    Updated: 2019/12/01 10:20:34 by avarnier         ###   ########.fr        #
+#    Updated: 2020/02/20 16:14:48 by avarnier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,8 +51,7 @@ FCT =		ft_atoi.c \
 			ft_strtrim.c \
 			ft_tolower.c \
 			ft_toupper.c \
-
-FCT_BONUS =	ft_lstadd_back.c \
+			ft_lstadd_back.c \
 			ft_lstclear.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
@@ -63,7 +62,6 @@ FCT_BONUS =	ft_lstadd_back.c \
 			ft_lstnew.c \
 
 OBJ = $(addsuffix .o, $(basename $(FCT)))
-OBJ_BONUS = $(addsuffix .o, $(basename $(FCT_BONUS)))
 
 all: $(NAME)
 
@@ -72,9 +70,6 @@ $(NAME): $(OBJ)
 
 %.o: %.c $(INC)
 	$(CC) -c -o $@ $< $(FLAGS)
-
-bonus: $(OBJ) $(OBJ_BONUS)
-	ar rc $(NAME) $(OBJ) $(OBJ_BONUS)
 
 clean:
 	rm -rf $(OBJ)
