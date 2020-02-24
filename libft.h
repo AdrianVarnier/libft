@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 14:11:40 by avarnier          #+#    #+#             */
-/*   Updated: 2019/12/19 15:34:40 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/02/24 09:18:04 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,8 @@ t_list			*ft_lstlast(t_list *l);
 t_list			*ft_lstmap(t_list *l, void *(*f)(void *), void(*del)(void *));
 t_list			*ft_lstnew(void *new_content);
 int				ft_lstsize(t_list *l);
+int				*ft_intdup(const int *ptr);
+size_t			ft_intlen(const int *s);
+void			strdel(char **s);
 
 #endif
