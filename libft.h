@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 14:11:40 by avarnier          #+#    #+#             */
-/*   Updated: 2020/02/24 09:18:04 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/02/25 11:47:10 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,7 @@ int				ft_lstsize(t_list *l);
 int				*ft_intdup(const int *ptr);
 size_t			ft_intlen(const int *s);
 void			strdel(char **s);
+char			*ft_itoa_base(int n, unsigned int b);
+char			*ft_itoa_base_maj(int n, unsigned int b);
 
 #endif
