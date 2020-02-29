@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 11:44:55 by avarnier          #+#    #+#             */
-/*   Updated: 2020/02/25 16:30:41 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/02/28 16:12:38 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ char			*ft_itoa_base_maj(int n, unsigned int b)
 		i--;
 	}
 	s[i] = nb + 48;
-	s[i] = ft_isdigit(s[i]) != 0 ? s[i] : s[i] +  7;
+	s[i] = ft_isdigit(s[i]) != 0 ? s[i] : s[i] + 7;
 	return (s);
 }
