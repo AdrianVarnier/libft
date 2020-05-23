@@ -6,13 +6,13 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/23 18:14:21 by avarnier          #+#    #+#             */
-/*   Updated: 2020/05/23 18:34:15 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/05/23 18:37:15 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		number_length(char *s)
+static int		number_length(const char *s)
 {
 	int	i;
 
@@ -22,7 +22,7 @@ static int		number_length(char *s)
 	return (i);
 }
 
-static double	get_number(char *s)
+static double	get_number(const char *s)
 {
 	int		i;
 	double	x;
@@ -64,5 +64,5 @@ double	atof(const char *s)
 		i++;
 	if (s[i] == '.')
 		y = get_number(s + i + 1);
-	return (x + (y / number_length(s + i + 1)))
+	return (x + (y / number_length(s + i + 1)));
 }
