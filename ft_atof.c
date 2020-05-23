@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/23 18:14:21 by avarnier          #+#    #+#             */
-/*   Updated: 2020/05/23 18:37:15 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/05/23 19:03:07 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,10 @@ static double	get_number(const char *s)
 	return (x * signe);
 }
 
-double	atof(const char *s)
+double			ft_atof(const char *s)
 {
 	int		i;
+	int		n;
 	double	x;
 	double	y;
 
@@ -63,6 +64,14 @@ double	atof(const char *s)
 	while (ft_isdigit(s[i]) == 1)
 		i++;
 	if (s[i] == '.')
+	{
+		n = number_length(s + i + 1);
 		y = get_number(s + i + 1);
-	return (x + (y / number_length(s + i + 1)));
+		while (n > 0)
+		{
+			y = y / 10;
+			n--;
+		}
+	}
+	return (x + y);
 }
