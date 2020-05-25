@@ -6,7 +6,7 @@
 #    By: avarnier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/30 12:55:17 by avarnier          #+#    #+#              #
-#    Updated: 2020/05/23 18:35:40 by avarnier         ###   ########.fr        #
+#    Updated: 2020/05/25 20:16:07 by avarnier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ FCT =		ft_atoi.c \
 			ft_lstnew.c \
 			ft_strdel.c\
 			ft_atof.c\
+			ft_itoa_base.c\
 
 OBJ = $(addsuffix .o, $(basename $(FCT)))
 
