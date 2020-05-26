@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 11:15:51 by avarnier          #+#    #+#             */
-/*   Updated: 2020/05/26 12:04:44 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/05/26 15:29:21 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	isbase(char c, char *base)
 	i = 0;
 	while (base[i] != '\0')
 	{
-		if(c == base[i])
+		if (c == base[i])
 			return (1);
 		i++;
 	}
@@ -65,4 +65,3 @@ int	ft_atoi_base(char *s, char *base)
 	}
 	return (x * signe);
 }
-
