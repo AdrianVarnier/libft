@@ -6,7 +6,7 @@
 /*   By: avarnier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 14:11:40 by avarnier          #+#    #+#             */
-/*   Updated: 2020/05/25 19:51:48 by avarnier         ###   ########.fr       */
+/*   Updated: 2020/05/26 12:03:04 by avarnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ int				ft_lstsize(t_list *l);
 void			ft_strdel(char **s);
 double			ft_atof(const char *s);
 char			*ft_itoa_base(int x, char *s);
+int				ft_atoi_base(char *s, char *base);
 
 #endif
